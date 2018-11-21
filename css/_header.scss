@@ -1,0 +1,144 @@
+@import "variables";
+
+header
+{
+  grid-row: 1/2;
+  grid-column: 1/13;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 73px;
+  display: grid;
+}
+
+#top-header
+{
+  grid-row: 1/2;
+  grid-column: 1/13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo
+{
+  height: 130px;
+  width: 150px;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#bottom-header
+{
+  grid-column: 1/13;
+  grid-row: 2/3;
+  background-color: colors(mainRed);
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+nav
+{
+
+  ul
+  {
+    margin:0;
+
+    li{
+      list-style: none;
+      padding: 0 10px;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(10,1fr);
+    }
+    a{
+      color:colors(mainWhite);
+      text-decoration: none;
+      font-family: $font;
+      font-size: 220%;
+    }
+
+  }
+}
+.marginfix
+{
+  margin-left:17%;
+}
+
+#info
+ {
+   grid-row: 1/2;
+   grid-column: 2/4;
+
+
+  color:colors(mainWhite);
+  text-decoration: none;
+  margin-left:17%;
+ }
+
+#infotext
+{
+  font-family: $font;
+  font-size: 220%;
+  padding:0;
+}
+#statistik
+{
+  grid-row: 1/2;
+  grid-column: 4/8;
+  margin-left: 27%;
+
+}
+#blivdonor
+{
+  grid-row: 1/2;
+  grid-column: 7/11;
+  margin-left: 27%;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: colors(mainRed);
+  color: colors(mainWhite);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: colors(mainRed);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: colors(mainWhite);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: colors(secondRed)}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: colors(secondRed);
+}

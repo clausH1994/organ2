@@ -1,0 +1,20 @@
+@function colors($color-name) {
+  @return map-get($color,$color-name);
+}
+
+$color:(
+        mainRed: (
+                #c53b33
+        ),
+        secondRed :
+                (
+                lighten(#c53b33, 20%)
+                ),
+
+        mainWhite: (
+                #ffffff
+        ),
+);
+
+$font: "Segoe UI";
+

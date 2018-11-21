@@ -1,0 +1,64 @@
+@import "variables";
+
+footer {
+  grid-row: 3/4;
+  grid-column: 1/13;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 30px 122px 30px;
+  display: grid;
+  background-color: colors(mainRed);
+}
+
+#btm-logo
+{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  height: 130px;
+  width: 150px;
+  background-image: url("../img/logo - hvid.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#footerText
+{
+  grid-row: 2/3;
+  grid-column: 3/5;
+  color: colors(mainWhite);
+  font: $font;
+  font-size: 25px;
+}
+
+.socialIcons
+{
+  grid-row: 2/3;
+  height: 102px;
+  width: 98px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#facebook
+{
+  grid-column: 11/12;
+  background-image: url("../img/facebook-3-xxl.png");
+}
+
+#twitter
+{
+  grid-column: 10/11;
+  background-image: url("../img/twitter-3-xxl.png");
+}
+
+#insta
+{
+  grid-column: 9/10;
+  background-image: url("../img/instagram-3-xxl.png");
+}
+
+#youtube
+{
+  grid-column: 8/9;
+  background-image: url("../img/youtube-3-xxl.png");
+}

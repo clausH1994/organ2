@@ -1,0 +1,11 @@
+@import "header";
+@import "footer";
+@import "indexPage";
+
+
+body {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 210px 1fr 183px;
+  display: grid;
+}
+
