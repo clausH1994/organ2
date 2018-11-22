@@ -1,7 +1,10 @@
 @import "header";
 @import "footer";
 @import "indexPage";
+@import "statistik";
 
+
+@import "donor";
 
 body {
   grid-template-columns: repeat(12, 1fr);
