@@ -12,7 +12,7 @@ header {
   grid-column: 1/13;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 
 #logo {
@@ -206,7 +206,7 @@ footer {
 #stats {
   grid-column: 1/13;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   display: grid;
 }
 
@@ -225,13 +225,13 @@ footer {
   background-image: url("../img/fik.PNG");
   grid-row: 3/5;
   grid-column: 7/13;
-  background-color: grey;
+  background-color: #D3D3D3;
 }
 
 #stext2 {
   grid-row: 3/5;
   grid-column: 1/7;
-  background-color: grey;
+  background-color: #D3D3D3;
 }
 
 #stat3 {
@@ -249,13 +249,13 @@ footer {
   background-image: url("../img/venteliste.PNG");
   grid-row: 7/9;
   grid-column: 7/13;
-  background-color: grey;
+  background-color: #D3D3D3;
 }
 
 #stext4 {
   grid-row: 7/9;
   grid-column: 1/7;
-  background-color: grey;
+  background-color: #D3D3D3;
 }
 
 .stat {
@@ -268,6 +268,55 @@ footer {
 .stext {
   font-size: 14px;
   text-align: center;
+}
+
+#bstat {
+  background-image: url("../img/Udklip.PNG");
+  background-repeat: no-repeat;
+  grid-column: span 12;
+  background-size: cover;
+  background-position-y: -20px;
+}
+
+#donor {
+  grid-column: 1/13;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  display: grid;
+}
+
+#overskrift {
+  grid-column: span 12;
+  text-align: center;
+  font-size: 50px;
+}
+
+p {
+  grid-column: 5/9;
+  font-size: 20px;
+}
+
+#nemid {
+  grid-column: 1/5;
+}
+
+#dkort {
+  grid-column: 5/9;
+}
+
+#pr {
+  grid-column: 9/13;
+}
+
+.dbox {
+  background-color: #c53b33;
+  grid-row: 4/5;
+  margin: 8px;
+  color: #ffffff;
+}
+
+.dbox h1 {
+  margin: 30px 0 0 5px;
 }
 
 body {

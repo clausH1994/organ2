@@ -1,9 +1,9 @@
-$OColor: grey; 
+$OColor: #D3D3D3; 
 
 #stats   {
     grid-column: 1/13;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     display: grid;
 }
 
@@ -69,4 +69,12 @@ $OColor: grey;
 .stext {
     font-size: 14px;
     text-align: center;
+}
+
+#bstat {
+    background-image: url("../img/Udklip.PNG");
+    background-repeat: no-repeat;
+    grid-column: span 12;
+    background-size: cover;
+    background-position-y: -20px
 }
