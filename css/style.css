@@ -210,6 +210,11 @@ footer {
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+#picholder {
+  display: flex;
+  justify-items: center;
   align-items: center;
 }
 
@@ -304,6 +309,7 @@ footer {
   width: 800px;
   background-size: contain;
   align-content: center;
+  background-repeat: no-repeat;
 }
 
 .stext {
