@@ -1,7 +1,12 @@
 @import "header";
 @import "footer";
 @import "indexPage";
+@import "statistik";
 
+@import "laesmere";
+@import "paaroerende";
+
+@import "donor";
 
 body {
   grid-template-columns: repeat(12, 1fr);
